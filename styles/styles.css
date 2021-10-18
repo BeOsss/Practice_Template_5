@@ -1,0 +1,21 @@
+:root {
+    /* Color */
+        /* Primary */
+        --red: hsl(0, 100%, 74%) 
+        --green: hsl(154, 59%, 51%)
+
+        /* Neutral color */
+        --dark_Blue: hsl(249, 10%, 26%)
+        --grayish_Blue: hsl(246, 25%, 77%)
+
+        /* Accent */
+        --blue: hsl(248, 32%, 49%)
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}

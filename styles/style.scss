@@ -1,0 +1,125 @@
+@import "color";
+$margin: 10px;
+* {
+	box-sizing: border-box;
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: $red url(../images/bg-intro-desktop.png);
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	color: white;
+	overflow-x: scroll;
+}
+.container {
+	padding: 12.5%;
+}
+.left-col {
+	width: 50%;
+	padding: 20% 15% 20% 0;
+	float: left;
+	.tittle {
+		font-size: 40px;
+		font-weight: 700;
+	}
+	.content {
+		font-size: 12px;
+		margin-top: 20px;
+	}
+}
+.right-col {
+	width: 50%;
+	color: $grey;
+	float: left;
+	.discount {
+		font-weight: 600;
+		background-color: $blue;
+		text-align: center;
+
+		padding: 3% 0;
+		border-radius: 10px;
+		box-shadow: 0px 7px 5px $grey;
+
+		span {
+			font-weight: 400;
+			font-size: 12px;
+		}
+	}
+	.register {
+		background-color: white;
+		padding: 5%;
+		margin-top: 7%;
+		border-radius: 10px;
+		.row {
+			width: 100%;
+			float: left;
+			// margin-bottom: 2rem;
+		}
+
+		input[type="password"],
+		input[type="text"] {
+			font-size: 20px;
+			font-weight: bold;
+			color: $grey;
+
+			border: 2px solid $grey;
+			border-radius: 10px;
+			width: 100%;
+			padding: 15px 20px;
+			outline: none;
+		}
+		::placeholder {
+			color: $grey;
+			opacity: 1; /* Firefox */
+		}
+		.form-group {
+			display: flex;
+			flex-direction: column;
+
+			margin-bottom: 2rem;
+			padding: 0;
+		}
+		.form-message {
+			font-size: 12px;
+			text-align: end;
+		}
+		input[type="text"]:focus,
+		input[type="text"]:hover,
+		input[type="password"]:focus,
+		input[type="password"]:hover {
+			border-color: $blue;
+		}
+		input[type="submit"] {
+			background-color: $green;
+
+			color: white;
+			text-align: center;
+			font-weight: 600;
+			word-spacing: 2px;
+
+			padding: 20px 0;
+			border-radius: 10px;
+			box-shadow: 2px 2px 5px $grey;
+		}
+		h3 {
+			font-size: 12px;
+			text-align: center;
+			color: $grayish_Blue;
+			span {
+				color: $red;
+			}
+		}
+
+		.form-group.invalid .form-control,
+		.form-group.invalid .form-control:focus,
+		.form-group.invalid .form-control:hover {
+			border-color: $red;
+		}
+		.form-group.invalid .form-message,
+		.form-group.invalid .form-label {
+			color: $red;
+		}
+	}
+}

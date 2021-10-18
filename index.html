@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="styles/style.css" />
+		<!-- font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		/>
+		<title>Frontend Mentor | Intro component with sign up form</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="left-col">
+				<div class="tittle">Learn to code by watching others</div>
+				<div class="content">
+					See how experienced developers solve problems in real-time. Watching
+					scripted tutorials is great, but understanding how developers think is
+					invaluable.
+				</div>
+			</div>
+			<div class="right-col">
+				<div class="discount">
+					Try it free 7 days <span>then $20/mo.thereafter</span>
+				</div>
+				<form class="register" method="POST" action="" id="register">
+					<div class="form-group">
+						<label for="name" class="form-label"></label>
+						<input
+							type="text"
+							class="row form-control"
+							name="name"
+							placeholder="Name"
+						/>
+						<span class="form-message"></span>
+					</div>
+					<div class="form-group">
+						<label for=""></label>
+						<input
+							type="text"
+							class="row form-control"
+							name="lastName"
+							placeholder="Last Name"
+						/>
+						<span class="form-message"></span>
+					</div>
+					<div class="form-group">
+						<label for=""></label>
+						<input
+							type="text"
+							class="row form-control"
+							name="email"
+							placeholder="Email"
+						/>
+						<span class="form-message"></span>
+					</div>
+					<div class="form-group">
+						<label for=""></label>
+						<input
+							type="password"
+							name="password"
+							id="password"
+							minlength="8"
+							required
+							inputmode="text"
+							placeholder="Password"
+							class="row form-control"
+						/>
+						<span class="form-message"></span>
+					</div>
+					<input type="submit" class="row" value="CLAIM YOUR FREE TRIAL" />
+					<h3>
+						By clicking the button, you are agreeing to our
+						<span>Terms and Services</span>
+					</h3>
+				</form>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
